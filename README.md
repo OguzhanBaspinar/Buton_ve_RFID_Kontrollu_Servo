@@ -39,10 +39,15 @@ RFID kartını kullanabilmek için gerekli kütüphaneyi raspberry de console ü
 
 >> sudo pip install pi-rc522
 <br>
+
 **Servo Motor Çalışma Prensibi** <br>
+
 Servo motorlarda hareket tahriki sağlayan bir DC motor bulunmaktadır. Ayrıca DC motora bağlı olan bir dişli mekanizması ile potansiyometre ve bir motor sürücü devresi bulunmaktadır. Potansiyometre sayesinde motor milinin açısal konumu tam olarak belirlenebilmektedir. Servo içerisindeki DC motor hareket ettikçe potansiyometre döner ve kontrol devresi motorun bulunduğu pozisyon ile istenilen pozisyonu karşılaştırarak motor sürme işlemi yapar. Servo motorlar harici bir motor sürücü devresine ihtiyaç duymazlar. <br>
+
 **Motor ve Butonların Bağlantı Pinleri**<br>
-![Pin](https://user-images.githubusercontent.com/106193850/187074029-b46dcf2b-7a65-4b04-8629-d3d892ae9c1a.png) <br>
+
+![Pin](https://user-images.githubusercontent.com/106193850/187074267-cc3bb173-ef10-42fd-9645-377f48d04911.png) <br>
+
 3 adet buton ile motorların hareketi sağlanacaktır. Buton1 +90 Buton2 -90 yönünde adım adım dönüş sağlayacaktır. 3.Button sıfır konumuna getirecektir. Butonların hepsi il olarak pasif durum olacaktır ve pasif durumda olduğunu anlamamız için kırmızı buton yanacaktır. RFID ile doğru kart okutulduğu zaman kırmızı buton sönüp yeşil buton yanacaktır ve butonlar akif bir duruma gelecektir. Artık Buton1 ile +90, buton2 ile -90 ve buton3 ile 0 konumuna getirerek servo motorun kontrolünü sağlayabilirsiniz. <br>
 Proje hakkında gerekli Python kodlarına, kodlar sekmesinden ulaşabilirsiniz.
 
